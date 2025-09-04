@@ -1,0 +1,75 @@
+/* Base styling */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: grid;
+  grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+}
+
+/* Layout areas */
+header {
+  grid-area: header;
+  background: #003366;
+  color: white;
+  padding: 1rem;
+}
+
+main {
+  grid-area: main;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+footer {
+  grid-area: footer;
+  background: #003366;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+/* Navigation menu with Flexbox */
+nav ul {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  
+}
+
+nav li {
+	flex: 1 1 auto; /* What is the difference between auto and 100% flex-basis? - turn on link borders to view */
+    text-align: center;
+    
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration:underline;
+  color:cadetblue;
+}
+
+/* Content areas */
+section {
+  background: #f0f0f0;
+  padding: 1rem;
+}
+
+aside {
+  background: #d9e6f2;
+  padding: 1rem;
+}
