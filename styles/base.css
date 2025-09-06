@@ -1,0 +1,106 @@
+/* Fonts and Global Reset */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+  background-color: #fafafa;
+  color: #333;
+}
+
+/* Header */
+header {
+  background-color: #003366;
+  color: white;
+  padding-top: 2rem;
+  text-align: center;
+  grid-row: 1;
+}
+#course-title {
+  display: block;
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+/* Navigation */
+nav {
+  display: flex;
+  justify-content: space-around;
+  gap: 1.5rem;
+  background-color: #000;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  transition: background 0.3s ease;
+}
+nav a:hover {
+  background-color: #0059b3;
+  border-radius: 5px;
+  text-decoration: underline;
+}
+
+/* Main */
+main {
+  max-width: 900px;
+  margin: 0 auto 2rem auto;
+  gap: 2rem;
+  padding: 0 1rem;
+  grid-row: 2;
+  
+}
+h1 {
+  text-align: center;
+  font-family: 'Merriweather', serif;
+}
+
+/* Cards */
+.card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: white;
+  padding: 1.5rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  text-align: center;
+
+}
+
+.bigbox{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  height: 840px;
+  padding: 1rem;
+
+}
+
+.card img {
+  float: right;
+  width: 30%;       /* smaller: 30% of the parent width */
+  height: auto;
+  margin: 0 0 1rem 1rem; 
+  border-radius: 50%;  /* perfect circle if image is square */
+}
+
+.card p {
+    text-align: left;
+}
+
+.content img {
+  float: left;
+  width: 30%;       /* smaller: 30% of the parent width */
+  height: auto;
+  margin-bottom: 1rem ;
+  border-radius: 50%;  /* perfect circle if image is square */
+}
+/* Footer */
+footer {
+  background: #003366;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  grid-row: 3;
+}
