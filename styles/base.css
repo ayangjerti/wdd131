@@ -9,7 +9,7 @@ body {
   display: grid;
   grid-template-rows: auto 1fr auto;
   min-height: 100vh;
-  background-color: #fafafa;
+  background-color: #d2d0d0;
   color: #333;
 }
 
