@@ -1,0 +1,145 @@
+/* Google Font import (choose your own pair if you want) */
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Merriweather:wght@400;700&display=swap'); */
+
+:root {
+  --primary-color: #2c3e50;   /* dark navy */
+  --secondary-color: #e67e22; /* orange accent */
+  --light-bg: #f9f9f9;
+  --dark-text: #2c3e50;
+  --light-text: #fff;
+  --max-width: 1100px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.5;
+  background: var(--light-bg);
+  color: var(--dark-text);
+}
+
+/* Header + Nav */
+header {
+  background: var(--primary-color);
+  color: var(--light-text);
+  padding: 1rem;
+  text-align: center;
+
+
+
+  display: flex;
+  justify-content: space-between;
+}
+
+header h1 {
+  font-family: 'Merriweather', serif;
+  font-size: 1.8rem;
+}
+
+nav ul {
+  /* margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem; */
+
+
+
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1rem; /* space between links */
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  color: var(--light-text);
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.3rem;
+  transition: background 0.3s ease;
+
+  font-weight: bold;
+}
+
+nav a:hover {
+  background: var(--secondary-color);
+}
+
+/* Main layout */
+main {
+  max-width: var(--max-width);
+  margin: 1rem auto;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: 1fr; /* mobile = single column */
+  gap: 1rem;
+}
+
+main h1 {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 1.6rem;
+}
+
+/* Figure styling */
+figure {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+figure img {
+  max-width: 100%;
+  height: 200px;
+  border-radius: 0.5rem;
+}
+
+figcaption {
+  margin-top: 0.5rem;
+  font-weight: bold;
+}
+
+/* Footer */
+footer {
+  background: var(--primary-color);
+  color: var(--light-text);
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+
+
+
+
+/* Mobile View */
+@media (max-width: 600px) {
+  #menuBtn {
+  display: block;
+  font-size: 1.8rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  }
+
+  #navMenu {
+    display: none; /* hide by default */
+  }
+
+  #navMenu.open {
+    display: block; /* show when toggled */
+  }
+
+  #navMenu ul {
+    flex-direction: column; /* stack links vertically */
+  }
+}
